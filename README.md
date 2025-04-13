@@ -2,11 +2,12 @@
 
 ## Подготовка к выполнению
 
+0. Добавил код terraform, который при выполнении создаёт инфраструктуру, а так же "${path.module}/playbook/inventory/prod.yml" по которому отрабатывает сразу Ansible, так как устал делать это руками... (шаблон .tftpl [тут](https://github.com/Liberaty/ans_hw_3/blob/main/terraform/inventory.tftpl))
+
 1. Подготовьте в Yandex Cloud три хоста: для `clickhouse`, для `vector` и для `lighthouse`.
 
-![3-podgotovka.png]()
-
-2. Репозиторий LightHouse находится [по ссылке](https://github.com/VKCOM/lighthouse).
+***Ответ:*** Готовая инфраструктура, а так же переписал с ubuntu на centos9 для изучения
+![3-podgotovka.png](https://github.com/Liberaty/ans_hw_3/blob/main/img/3-podgotovka.png?raw=true)
 
 ## Основная часть
 
