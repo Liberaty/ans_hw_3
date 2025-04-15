@@ -31,6 +31,6 @@ resource "yandex_compute_instance" "centos" {
 
   metadata = {
     serial-port-enable = 1
-    ssh-keys           = "root:${local.ssh_public_key}" # Добавляем SSH-ключ для пользователя root
+    ssh-keys           = "cloud-user:${local.ssh_public_key}" # Добавляем SSH-ключ для пользователя root
   }
 }

@@ -6,7 +6,7 @@ clickhouse:
     ${i.name}:
       ansible_host: ${i.network_interface[0].nat_ip_address == "" ? i.network_interface[0].ip_address : i.network_interface[0].nat_ip_address}
       ansible_connection: ssh
-      ansible_user: root
+      ansible_user: cloud-user
       ansible_ssh_private_key_file: ~/.ssh/id_ed25519
       ansible_python_interpreter: /usr/bin/python3
 
@@ -19,7 +19,7 @@ vector:
     ${i.name}:
       ansible_host: ${i.network_interface[0].nat_ip_address == "" ? i.network_interface[0].ip_address : i.network_interface[0].nat_ip_address}
       ansible_connection: ssh
-      ansible_user: root
+      ansible_user: cloud-user
       ansible_ssh_private_key_file: ~/.ssh/id_ed25519
       ansible_python_interpreter: /usr/bin/python3
 
@@ -32,7 +32,7 @@ lighthouse:
     ${i.name}:
       ansible_host: ${i.network_interface[0].nat_ip_address == "" ? i.network_interface[0].ip_address : i.network_interface[0].nat_ip_address}
       ansible_connection: ssh
-      ansible_user: root
+      ansible_user: cloud-user
       ansible_ssh_private_key_file: ~/.ssh/id_ed25519
       ansible_python_interpreter: /usr/bin/python3
 
